@@ -1,0 +1,49 @@
+{
+    "recommended_terms": [
+        "Money management",
+        "Money management account",
+        "Money management solution",
+        "Cash management",
+        "Cash management account",
+        "Cash management solution",
+        "Financial services",
+        "Financial account",
+        "Financial product",
+        "Financial service product",
+        "Store of funds",
+        "Wallet",
+        "Open loop wallet",
+        "Stored-value account",
+        "Open-Loop stored-value account",
+        "Prepaid access account",
+        "Eligible for FDIC pass-through insurance",
+        "Funds held at [Partner Bank], Member FDIC"
+    ],
+    "avoid_terms": [
+        "Stripe",
+        "[Your Brand] bank",
+        "Bank account",
+        "Bank balance",
+        "Banking",
+        "Banking account",
+        "Banking product",
+        "Banking platform",
+        "Deposits",
+        "Mobile banking",
+        "[Your Brand] pays interest",
+        "[Your Brand] sets interest rates",
+        "[Your Brand] advances funds",
+        "Create a [Bank Partner] bank account",
+        "A better way to bank with [Bank Partner]",
+        "Mobile banking with [Bank Partner]"
+    ],
+    "guidelines": [
+        "Always refer to yield as 'yield'.",
+        "Always disclose prominently in your marketing materials that the yield percentage is subject to change and the conditions under which it might change.",
+        "Notify your existing customers whenever the yield percentage has changed.",
+        "Prominently display the most recent yield percentage in their Dashboard.",
+        "Never refer to yield as 'interest'.",
+        "Don't reference the Fed Funds Rate as a benchmark for setting your yield percentage.",
+        "Don't imply that the yield is pass-through interest from a bank partner."
+    ]
+}
