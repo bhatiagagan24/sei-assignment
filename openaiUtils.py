@@ -14,7 +14,7 @@ compliance_check_map = {
 class OpenApiClient:
     def __init__(self, api_key):
         self.model = 'gpt-4-turbo'
-        self.client = self.__init_client(api_key)
+        self.__init_client(api_key)
 
     def __init_client(self, api_key):
         self.client = OpenAI(api_key=api_key)
