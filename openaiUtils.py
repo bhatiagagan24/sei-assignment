@@ -28,6 +28,7 @@ class OpenApiClient:
             data = json.load(file)
         return data
 
+    ## initial prompt to set the context
     def __get_init_prompt(self):
         checks = self.__load_compliance_checks()
         return {
@@ -38,6 +39,7 @@ class OpenApiClient:
              '''
         }
 
+    ## secondary prompt required to ask chat gpt to perform action
     def __get_prompt(self, website_text):
         return {
             "role": "system",
@@ -48,6 +50,7 @@ class OpenApiClient:
              '''
         }
 
+    ## calling openai api here. Ideally this should be declared elsewhere
     def get_response(self, website_text):
         init_message = self.__get_init_prompt()
         followup = self.__get_prompt(website_text=website_text)
