@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 required_keys = ['url', 'api_token']
 
-stripe_fintech_policy = 'https://stripe.com/docs/treasury/marketing-treasury'
+## stripe_fintech_policy = 'https://stripe.com/docs/treasury/marketing-treasury'
 
 def validate_request_data(request_json):
     for k in required_keys:
@@ -17,18 +17,14 @@ def sanitize_url(url):
     u = u.replace('http://', '')
     return u.replace('/', '-')
 
-
-def get_compliance_list(compliance_name):
-    pass
-
-
 ## handle exceptions gracefully here
-def load_stripe_content(target_url):
+def load_website_content(target_url):
     response = requests.get(target_url)
     response.raise_for_status()  # Raise an exception for HTTP errors
     soup = BeautifulSoup(response.text, 'html.parser')
     text_content = soup.get_text(separator='\n', strip=True)
-    file_path = os.path.join('analysis', sanitize_url(target_url))
+    file_path = os.path.join('scraped-data', sanitize_url(target_url))
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(text_content)
+    return text_content
 
