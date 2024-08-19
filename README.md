@@ -13,6 +13,14 @@ Endpoint - /check-compliance [http://127.0.0.1:5000/create-compliance-report]
 
 Pass the url for examination as well as the OpenAI Chatgpt api token in the request body.
 
+## Updates - 
+This ia a prototype and not even a MVC. We can definitely optimize a lot of things including the introduction of caching, and using 
+a database.
+We can also make the code a lot more extensible, but then again this is a prototype.
+Also due to security concerns with my API Key, I've made it accoridng to BYOK Model so that folks at Sei can test it using their own key. 
+
+Please Note that I'm using a paid Open AI account.
+
 
 ## Steps to run this Project - 
 
@@ -37,3 +45,6 @@ curl --request POST \
 	"url": "https://mercury.com/",
 	"api_token": "api_token_here"
 }'
+
+
+
