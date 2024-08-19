@@ -23,8 +23,5 @@ def load_website_content(target_url):
     response.raise_for_status()  # Raise an exception for HTTP errors
     soup = BeautifulSoup(response.text, 'html.parser')
     text_content = soup.get_text(separator='\n', strip=True)
-    file_path = os.path.join('scraped-data', sanitize_url(target_url))
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write(text_content)
     return text_content
 

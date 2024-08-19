@@ -13,9 +13,12 @@ Endpoint - /check-compliance [http://127.0.0.1:5000/create-compliance-report]
 
 Pass the url for examination as well as the OpenAI Chatgpt api token in the request body.
 
-## Updates - 
+## Improvements - 
 This ia a prototype and not even a MVC. We can definitely optimize a lot of things including the introduction of caching, and using 
-a database.
+a database. We can cache the scraped webpages as well as the openai API responses.
+
+We further need to have better exception handling in place, and this API synchronous as of now. We can greatly increase the performance by making it asynchronous. 
+
 We can also make the code a lot more extensible, but then again this is a prototype.
 Also due to security concerns with my API Key, I've made it accoridng to BYOK Model so that folks at Sei can test it using their own key. 
 
